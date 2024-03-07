@@ -4,8 +4,11 @@ const config = {
   app: {
     port: process.env.PORT,
   },
+
+  db: {
+    uri: process.env.MONGODB_URI || "mongodb://localhost:27017"
+    }
 };
 
-console.log("PORT: ", process.env.PORT)
 
 module.exports = config;
